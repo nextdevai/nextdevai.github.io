@@ -1,34 +1,22 @@
-# Site settings
-title: Martin Gillis
-email: martin.gillis@dal.ca
-
-github_username: nextdevai
-
-description: >- # this means to ignore newlines until "baseurl:"
-  Learning and developing technologies for artificial intelligence.
-
-# Theme settings
-minimal_mistakes_skin: default
+# Jekyll site settings
+# ====================
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+locale: "en-CA"
+title: "Martin Gillis"
+subtitle: "Institute for Big Data Analytics"
+description: "Learning and developing technologies for artificial intelligence."
+baseurl: ""
+url: "https://nextdevai.github.io"
 search: true
+breadcrumbs: false
 
-# Build settings
-github: [metadata]
-
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: America/Halifax
+github: "[metadata]"
+repository: "nextdevai/nextdevai.github.io"
 
 include:
   - _pages
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 # exclude:
 #   - Gemfile
 #   - Gemfile.lock
@@ -38,53 +26,35 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-
 author:
-  name   : "First Lastname"
+  name   : "Martin Gillis"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  location: "Halifax, NS, Canada"
+  bio    : "Learning and developing technologies for artificial intelligence."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://bigdata.cs.dal.ca"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/nextdevai"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/nextdevai"
 
+markdown: "kramdown"
 defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: single
+      layout: "single"
       author_profile: true
+      show_date: true
       read_time: true
       comments: true
       share: true
@@ -92,14 +62,33 @@ defaults:
   # _pages
   - scope:
       path: "_pages"
-      type: pages
+      type: "pages"
     values:
-      layout: single
+      layout: "single"
       author_profile: true
 
+permalink: "/:categories/:title/"
+paginate: 5
+paginate_path: "/page:num/"
+timezone: "America/Halifax"
+
+plugins:
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jemoji
+
 category_archive:
-  type: liquid
-  path: /categories/
+  type: "liquid"
+  path: "/categories/"
 tag_archive:
-  type: liquid
-  path: /tags/
+  type: "liquid"
+  path: "/tags/"
+
+compress_html:
+  clippings: "all"
+  ignore:
+    envs: "development"

@@ -8,6 +8,7 @@ gem "faraday-retry"
 gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
+  gem "jekyll-github-metadata"
   gem "jekyll-include-cache"
   gem "jekyll-paginate"
   gem "jekyll-algolia"

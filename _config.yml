@@ -1,13 +1,11 @@
 # Site settings
 title: Martin Gillis
 email: martin.gillis@dal.ca
+
 github_username: nextdevai
 
 description: >- # this means to ignore newlines until "baseurl:"
   Learning and developing technologies for artificial intelligence.
-
-baseurl: ""
-url: "nextdevai.github.io"
 
 # Theme settings
 minimal_mistakes_skin: default

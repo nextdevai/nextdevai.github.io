@@ -14,6 +14,9 @@ breadcrumbs: false
 github: "[metadata]"
 repository: "nextdevai/nextdevai.github.io"
 
+masthead_title: "$ NextDevAI $"
+# logo: "/assets/images/<filename>.png"
+
 include:
   - _pages
 

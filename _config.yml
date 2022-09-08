@@ -3,8 +3,8 @@
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 locale: "en-CA"
-title: "Martin Gillis"
-subtitle: "Institute for Big Data Analytics"
+title: "H. Martin Gillis"
+# subtitle: ""
 description: "Learning and developing technologies for artificial intelligence."
 baseurl: ""
 url: "https://nextdevai.github.io"
@@ -27,14 +27,20 @@ include:
 #   - vendor/ruby/
 
 author:
-  name   : "Martin Gillis"
+  name   : "H. Martin Gillis"
   avatar : "/assets/images/bio-photo.jpg"
   location: "Halifax, NS, Canada"
-  bio    : "Learning and developing technologies for artificial intelligence."
+  bio    : "PhD Student at the Institute for Big Data Analytics."
   links:
+    - label: "Dalhousie University"
+      icon: "fas fa-fw fa-university"
+      url: "https://www.dal.ca"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://bigdata.cs.dal.ca"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:martin.gillis@dal.ca"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/nextdevai"

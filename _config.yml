@@ -8,13 +8,13 @@ title: "H. Martin Gillis"
 description: "Learning and developing technologies for artificial intelligence."
 baseurl: ""
 url: "https://nextdevai.github.io"
-search: true
 breadcrumbs: false
+search: true
 
 github: "[metadata]"
 repository: "nextdevai/nextdevai.github.io"
 
-masthead_title: "$ NextDevAI $"
+masthead_title: "NextDevAI"
 # logo: "/assets/images/<filename>.png"
 
 include:

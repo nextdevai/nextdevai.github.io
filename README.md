@@ -1,2 +1,1 @@
 # nextdevai.github.io
-
